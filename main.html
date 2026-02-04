@@ -14,6 +14,7 @@
 			let smax = -1;
 
 			for(let num of arr){
+				num = Number(num);
 				if(num > max){
 					max = num;
 				}else if(smax !== max && num > smax){
