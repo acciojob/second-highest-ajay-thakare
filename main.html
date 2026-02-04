@@ -10,6 +10,18 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let max = 0;
+			let smax = -1;
+
+			for(let num of arr){
+				if(num > max){
+					max = num;
+				}else if(smax !== max && num > smax){
+					smax = num;
+				}
+			}
+
+			return smax;
 			
 		}
 
